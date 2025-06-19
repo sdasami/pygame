@@ -42,8 +42,8 @@ def main():
         
             for shot in shots:
                 if astroid.collides_with(shot):
-                    astroid.kill()
                     shot.kill()
+                    astroid.split()
 
         screen.fill("black")
 
